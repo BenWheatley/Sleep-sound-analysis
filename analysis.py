@@ -59,7 +59,7 @@ for start in range(0, len(data), window_size):
 for timestamp in loud_parts:
     print(f"Loud part at {timestamp:.2f} seconds")
 
-plt.plot(graph, linestyle='-')
+plt.plot(graph, linestyle='None', marker='.', markersize=1)
 plt.title('Graph of log2 loudness')
 plt.xlabel(f'time index ({window_seconds:.2f}s)')
 plt.ylabel('log2(value)')
